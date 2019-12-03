@@ -1,0 +1,460 @@
+AppName,TCID,STATUS,EXEDATE,ENV|CODE|DATA|REQ,newrun2.1
+vATOM,1,Pass,1/1/2016,"STG2.0|print(data[""Weight""].std())|column doesnot exist|standard variations",2.1
+vATOM,4,Fail,1/4/2016,"DEV2.0|print(""sum is"",a+b)|No varibles named a and b|retrive data","DEV2.1|print(""sum is"",a+b)|No varibles named a and b|retrive data"
+vATOM,6,Pass,1/6/2016,STG2.0|while var >! 0:  |invalid operator|validation,2.1
+vATOM,8,Pass,1/8/2016,"DEV2.0| print ""Ok""|Missing parentheses in call to 'print'| printing",2.1
+vATOM,11,Pass,1/11/2016,STG2.0|while var >! 0:  |invalid operator|validation,2.1
+vATOM,14,Fail,1/14/2016,"DEV2.0|print(""a[10]"")|No varible named a|retrive data","DEV2.1|print(""a[10]"")|No varible named a|retrive data"
+vATOM,15,Pass,1/15/2016,PROD2.0|plt.show()|matplotlib is not imported|visualising,2.1
+vATOM,17,Pass,1/17/2016,"STG2.0|for i in range(0,2)|List out of Index [23]|looping",2.1
+vATOM,21,Fail,1/21/2016,PROD2.0|plt.show()|matplotlib is not imported|visualising,PROD2.1|plt.show()|matplotlib is not imported|visualising
+vATOM,22,Fail,1/22/2016,UAT2.0|import pandas as pd|package not found|importing,UAT2.1|import pandas as pd|package not found|importing
+vATOM,24,Pass,1/24/2016,DEV2.0|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming,2.1
+vATOM,37,Fail,2/6/2016,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading","UAT2.1| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading"
+vATOM,40,Pass,2/9/2016,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading",2.1
+vATOM,45,Fail,2/14/2016,"UAT2.0|return func(*args, **kw)|InterruptedError|Handle Interrupt Error","UAT2.1|return func(*args, **kw)|InterruptedError|Handle Interrupt Error"
+vATOM,49,Pass,2/18/2016,UAT2.0|import matplotlib.pyplot as plt|matplot: Package not found|importing,2.1
+vATOM,50,Pass,2/19/2016,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading",2.1
+vATOM,52,Fail,2/21/2016,UAT2.0|import matplotlib as plt|matplotlib: Package not found|importing,UAT2.1|import matplotlib as plt|matplotlib: Package not found|importing
+vATOM,55,Fail,2/24/2016,"PROD2.0| plt.rc(""font"",""size""=14)| keyword can't be an expression| setting RC parameter","PROD2.1| plt.rc(""font"",""size""=14)| keyword can't be an expression| setting RC parameter"
+vATOM,56,Pass,2/25/2016,PROD2.0|plt.show()|matplotlib is not imported|visualising,2.1
+vATOM,64,Fail,3/4/2016,PROD2.0|plt.show()|matplotlib is not imported|visualising,PROD2.1|plt.show()|matplotlib is not imported|visualising
+vATOM,66,Pass,3/6/2016,"DEV2.0| for x,d in data.Height, data.shape[0]| too many values to unpack|looping",2.1
+vATOM,69,Fail,3/9/2016,STG2.0|for i in Age|list index out of range|looping,STG2.1|for i in Age|list index out of range|looping
+vATOM,70,Pass,3/10/2016,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data",2.1
+vATOM,73,Fail,3/13/2016,DEV2.0|df.read_csv(...)|file not found|Importing file,DEV2.1|df.read_csv(...)|file not found|Importing file
+vATOM,74,Pass,3/14/2016,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,2.1
+vATOM,82,Pass,3/22/2016,DEV2.0|plt.show()|plt:undefined name|displaying,2.1
+vATOM,84,Fail,3/24/2016,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,STG2.1|import matplotlib.pyplot as plt|matplotlib: Package not found|importing
+vATOM,90,Fail,3/30/2016,"DEV2.0|print(""sum is"",a+b)|No varibles named a and b|retrive data","DEV2.1|print(""sum is"",a+b)|No varibles named a and b|retrive data"
+vATOM,99,Pass,4/8/2016,DEV2.0|plt.show()|plt:undefined name|displaying,2.1
+vATOM,100,Fail,4/9/2016,UAT2.0|import matplotlib.pyplot as plt|matplot: Package not found|importing,UAT2.1|import matplotlib.pyplot as plt|matplot: Package not found|importing
+vATOM,106,Pass,4/15/2016,"STG2.0|for i,j in range()|range expected 1 arguments|parsing",2.1
+vATOM,110,Pass,4/19/2016,"DEV2.0|print(""a[10]"")|No varible named a|retrive data",2.1
+vATOM,113,Pass,4/22/2016,"STG2.0|print(data[""Weight""].std())|column doesnot exist|standard variations",2.1
+vATOM,115,Fail,4/24/2016,DEV2.0|df.read_csv(...)|file not found|Importing file,DEV2.1|df.read_csv(...)|file not found|Importing file
+vATOM,116,Fail,4/25/2016,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,UAT2.1|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise
+vATOM,120,Fail,4/29/2016,UAT2.0|import matplotlib as plt|matplotlib: Package not found|importing,UAT2.1|import matplotlib as plt|matplotlib: Package not found|importing
+vATOM,121,Fail,4/30/2016,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,DEV2.1|print(df.columns)|df: undefined dataframe|retrive data
+vATOM,122,Pass,5/1/2016,"PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data",2.1
+vATOM,123,Fail,5/2/2016,UAT2.0|import matplotlib.pyplot as plt|matplot: Package not found|importing,UAT2.1|import matplotlib.pyplot as plt|matplot: Package not found|importing
+vATOM,130,Pass,5/9/2016,DEV2.0|plt.show()|displaying graph without plotting it|plotting,2.1
+vATOM,134,Fail,5/13/2016,DEV2.0|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming,DEV2.1|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming
+vATOM,136,Fail,5/15/2016,DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data,DEV2.1|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data
+vATOM,139,Pass,5/18/2016,"DEV2.0|print(""a[10]"")|No varible named a|retrive data",2.1
+vATOM,140,Pass,5/19/2016,"PROD2.0| client.post_telemetry(navsat_msg, compass_msg)|TimeoutError|Accept TimeoutError Properly",2.1
+vATOM,142,Pass,5/21/2016,STG2.0|for x in range(10)|List out of index [15]|looping,2.1
+vATOM,143,Fail,5/22/2016,"PROD2.0| client.post_telemetry(navsat_msg, compass_msg)|TimeoutError|Accept TimeoutError Properly","PROD2.1| client.post_telemetry(navsat_msg, compass_msg)|TimeoutError|Accept TimeoutError Properly"
+vATOM,144,Fail,5/23/2016,DEV2.0|plt.show()|displaying graph without plotting it|plotting,DEV2.1|plt.show()|displaying graph without plotting it|plotting
+vATOM,145,Pass,5/24/2016,"DEV2.0| print ""Ok""|Missing parentheses in call to 'print'| printing",2.1
+vATOM,146,Pass,5/25/2016,"DEV2.0|print(""sum is"",a+b)|No varibles named a and b|retrive data",2.1
+vATOM,147,Pass,5/26/2016,UAT2.0|fun(20)|arguments undefined in function|pass by value ,2.1
+vATOM,148,Fail,5/27/2016,STG2.0|while var >! 0:  |invalid operator|validation,STG2.1|while var >! 0:  |invalid operator|validation
+vATOM,157,Pass,6/5/2016,UAT2.0|import pandasa as pd|pandas: Package not found|importing,2.1
+vATOM,158,Fail,6/6/2016,UAT2.0|import pandasa as pd|pandas: Package not found|importing,UAT2.1|import pandasa as pd|pandas: Package not found|importing
+vATOM,163,Fail,6/11/2016,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,DEV2.1|print(df.columns)|df: undefined dataframe|retrive data
+vATOM,168,Pass,6/16/2016,DEV2.0|df.read_csv(...)|file not found|Importing file,2.1
+vATOM,172,Pass,6/20/2016,DEV2.0|plt.show()|plt:undefined name|displaying,2.1
+vATOM,174,Fail,6/22/2016,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading","UAT2.1| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading"
+vATOM,177,Fail,6/25/2016,PROD2.0|print(('python')*a)|a: variable undefined|retrieve data,PROD2.1|print(('python')*a)|a: variable undefined|retrieve data
+vATOM,180,Pass,6/28/2016,UAT2.0|import pandasa as pd|pandasa: Package not found|importing,2.1
+vATOM,182,Pass,6/30/2016,STG2.0|while var >! 0:  |invalid operator|validation,2.1
+vATOM,183,Fail,7/1/2016,"DEV2.0| print ""Ok""|Missing parentheses in call to 'print'| printing","DEV2.1| print ""Ok""|Missing parentheses in call to 'print'| printing"
+vATOM,184,Fail,7/2/2016,UAT2.0|import pandasa as pd|pandas: Package not found|importing,UAT2.1|import pandasa as pd|pandas: Package not found|importing
+vATOM,186,Pass,7/4/2016,"STG2.0|print(data[""Weight""].std())|column doesnot exist|standard variations",2.1
+vATOM,187,Fail,7/5/2016,DEV2.0|df.read_csv(...)|file not found|Importing file,DEV2.1|df.read_csv(...)|file not found|Importing file
+vATOM,188,Pass,7/6/2016,UAT2.0|import matplotlib.pyplot as plt|matplot: Package not found|importing,2.1
+vATOM,198,Fail,7/16/2016,PROD2.0|Not compatible with IOS 13|Update not found|Updating,PROD2.1|Not compatible with IOS 13|Update not found|Updating
+vATOM,201,Fail,7/19/2016,UAT2.0|form.submit(name[0])|Array index out of bounds|Need to specify name,UAT2.1|form.submit(name[0])|Array index out of bounds|Need to specify name
+vATOM,202,Pass,7/20/2016,"STG2.0|print(data[""Weight""].std())|column doesnot exist|standard variations",2.1
+vATOM,206,Pass,7/24/2016,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading",2.1
+vATOM,208,Fail,7/26/2016,UAT2.0|import pandasa as pd|pandasa: Package not found|importing,UAT2.1|import pandasa as pd|pandasa: Package not found|importing
+vATOM,211,Fail,7/29/2016,UAT2.0|import pandasa as pd|pandasa: Package not found|importing,UAT2.1|import pandasa as pd|pandasa: Package not found|importing
+vATOM,213,Fail,7/31/2016,UAT2.0|import matplotlib.pyplot as plt|matplot: Package not found|importing,UAT2.1|import matplotlib.pyplot as plt|matplot: Package not found|importing
+vATOM,217,Fail,8/4/2016,UAT2.0|import matplotlib.pyplot as plt|matplot: Package not found|importing,UAT2.1|import matplotlib.pyplot as plt|matplot: Package not found|importing
+vATOM,218,Pass,8/5/2016,UAT2.0|fun(20)|arguments undefined in function|pass by value ,2.1
+vATOM,219,Fail,8/6/2016,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,UAT2.1|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise
+vATOM,221,Fail,8/8/2016,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,DEV2.1|print(df.columns)|df: undefined dataframe|retrive data
+vATOM,224,Fail,8/11/2016,PROD2.0|print(('python')*a)|a: variable undefined|retrieve data,PROD2.1|print(('python')*a)|a: variable undefined|retrieve data
+vATOM,227,Fail,8/14/2016,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing","PROD2.1|import plotly|The plotly.plotly module is deprecated,|importing"
+vATOM,229,Pass,8/16/2016,PROD2.0|import numpy as np|numpy: Package not found|importing,2.1
+vATOM,230,Fail,8/17/2016,UAT2.0|import pandas as pd|package not found|importing,UAT2.1|import pandas as pd|package not found|importing
+vATOM,232,Fail,8/19/2016,UAT2.0|import pandas as pd|package not found|importing,UAT2.1|import pandas as pd|package not found|importing
+vATOM,233,Fail,8/20/2016,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,DEV2.1|print(df.columns)|df: undefined dataframe|retrive data
+vATOM,234,Fail,8/21/2016,UAT2.0|form.submit(name[0])|Array index out of bounds|Need to specify name,UAT2.1|form.submit(name[0])|Array index out of bounds|Need to specify name
+vATOM,236,Pass,8/23/2016,"PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data",2.1
+vATOM,245,Pass,9/1/2016,DEV2.0|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming,2.1
+vATOM,246,Fail,9/2/2016,DEV2.0|import seaborn as sns|seaborn: package not found|importing,DEV2.1|import seaborn as sns|seaborn: package not found|importing
+vATOM,251,Fail,9/7/2016,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,UAT2.1|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise
+vATOM,253,Pass,9/9/2016,"STG2.0|for i in range(0,2)|List out of Index [23]|looping",2.1
+vATOM,254,Fail,9/10/2016,"DEV2.0|print(""a[10]"")|No varible named a|retrive data","DEV2.1|print(""a[10]"")|No varible named a|retrive data"
+vATOM,255,Pass,9/11/2016,UAT2.0|import pandasa as pd|pandas: Package not found|importing,2.1
+vATOM,256,Pass,9/12/2016,DEV2.0|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming,2.1
+vATOM,260,Fail,9/16/2016,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data","DEV2.1|print(data.[""Name""])|No column named ""Name""|retrive data"
+vATOM,263,Fail,9/19/2016,UAT2.0|import matplotlib.pyplot as plt|matplot: Package not found|importing,UAT2.1|import matplotlib.pyplot as plt|matplot: Package not found|importing
+vATOM,265,Fail,9/21/2016,"DEV2.0| for x,d in data.Height, data.shape[0]| too many values to unpack|looping","DEV2.1| for x,d in data.Height, data.shape[0]| too many values to unpack|looping"
+vATOM,270,Fail,9/26/2016,"PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data","PROD2.1|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data"
+vATOM,271,Fail,9/27/2016,"DEV2.0|plt.plot(x,y)|x,y : undefined variables|plotting","DEV2.1|plt.plot(x,y)|x,y : undefined variables|plotting"
+vATOM,273,Fail,9/29/2016,DEV2.0|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming,DEV2.1|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming
+vATOM,274,Fail,9/30/2016,"STG2.0|for i in range(0,2)|List out of Index [23]|looping","STG2.1|for i in range(0,2)|List out of Index [23]|looping"
+vATOM,276,Fail,10/2/2016,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data","DEV2.1|print(data.[""Name""])|No column named ""Name""|retrive data"
+vATOM,277,Pass,10/3/2016,"STG2.0|for i in range(0,2)|List out of Index [23]|looping",2.1
+vATOM,279,Fail,10/5/2016,PROD2.0|plt.show()|matplotlib is not imported|visualising,PROD2.1|plt.show()|matplotlib is not imported|visualising
+vATOM,281,Pass,10/7/2016,PROD2.0|plt.show()|matplotlib is not imported|visualising,2.1
+vATOM,283,Fail,10/9/2016,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,DEV2.1|print(df.columns)|df: undefined dataframe|retrive data
+vATOM,285,Pass,10/11/2016,"DEV2.0|print(""sum is"",a+b)|No varibles named a and b|retrive data",2.1
+vATOM,286,Pass,10/12/2016,"STG2.0|for i in range(0,2)|List out of Index [23]|looping",2.1
+vATOM,288,Pass,10/14/2016,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,2.1
+vATOM,289,Pass,10/15/2016,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,2.1
+vATOM,296,Pass,10/22/2016,"STG2.0|for i in range(0,2)|List out of Index [23]|looping",2.1
+vATOM,297,Fail,10/23/2016,PROD2.0|np.arange(8)|numpy array out of range|looping,PROD2.1|np.arange(8)|numpy array out of range|looping
+vATOM,300,Fail,10/26/2016,"STG2.0|for i in range(0,2)|List out of Index [23]|looping","STG2.1|for i in range(0,2)|List out of Index [23]|looping"
+vATOM,302,Fail,10/28/2016,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing","PROD2.1|import plotly|The plotly.plotly module is deprecated,|importing"
+vATOM,305,Fail,10/31/2016,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data","DEV2.1|print(data.[""Name""])|No column named ""Name""|retrive data"
+vATOM,307,Pass,11/2/2016,UAT2.0|import pandas as pd|package not found|importing,2.1
+vATOM,309,Fail,11/4/2016,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,UAT2.1|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise
+vATOM,310,Pass,11/5/2016,"PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data",2.1
+vATOM,314,Fail,11/9/2016,"STG2.0|for i,j in range()|range expected 1 arguments|parsing","STG2.1|for i,j in range()|range expected 1 arguments|parsing"
+vATOM,316,Pass,11/11/2016,"PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data",2.1
+vATOM,322,Pass,11/17/2016,PROD2.0|np.arange(8)|numpy array out of range|looping,2.1
+vATOM,323,Fail,11/18/2016,STG2.0|for x in range(10)|List out of index [15]|looping,STG2.1|for x in range(10)|List out of index [15]|looping
+vATOM,324,Pass,11/19/2016,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing",2.1
+vATOM,326,Fail,11/21/2016,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading","UAT2.1| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading"
+vATOM,327,Pass,11/22/2016,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing",2.1
+vATOM,329,Pass,11/24/2016,PROD2.0|plt.show()|matplotlib is not imported|visualising,2.1
+vATOM,333,Pass,11/28/2016,"DEV2.0|plt.plot(x,y)|x,y : undefined variables|plotting",2.1
+vATOM,337,Pass,12/2/2016,DEV2.0|plt.show()|plt:undefined name|displaying,2.1
+vATOM,338,Pass,12/3/2016,PROD2.0|plt.show()|matplotlib is not imported|visualising,2.1
+vATOM,341,Pass,12/6/2016,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,2.1
+vATOM,346,Fail,12/11/2016,UAT2.0|import pandasa as pd|pandasa: Package not found|importing,UAT2.1|import pandasa as pd|pandasa: Package not found|importing
+vATOM,347,Fail,12/12/2016,DEV2.0|import seaborn as sns|seaborn: package not found|importing,DEV2.1|import seaborn as sns|seaborn: package not found|importing
+vATOM,348,Fail,12/13/2016,DEV2.0|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming,DEV2.1|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming
+vATOM,351,Pass,12/16/2016,DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data,2.1
+vATOM,352,Pass,12/17/2016,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading",2.1
+vATOM,353,Pass,12/18/2016,DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data,2.1
+vATOM,354,Fail,12/19/2016,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,DEV2.1|print(df.columns)|df: undefined dataframe|retrive data
+vATOM,355,Fail,12/20/2016,"DEV2.0|print(""sum is"",a+b)|No varibles named a and b|retrive data","DEV2.1|print(""sum is"",a+b)|No varibles named a and b|retrive data"
+vATOM,360,Pass,12/25/2016,"PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data",2.1
+vATOM,361,Fail,12/26/2016,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,DEV2.1|print(df.columns)|df: undefined dataframe|retrive data
+vATOM,362,Fail,12/27/2016,"PROD2.0| plt.rc(""font"",""size""=14)| keyword can't be an expression| setting RC parameter","PROD2.1| plt.rc(""font"",""size""=14)| keyword can't be an expression| setting RC parameter"
+vATOM,364,Pass,12/29/2016,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,2.1
+vATOM,365,Fail,12/30/2016,"STG2.0|for i,j in range()|range expected 1 arguments|parsing","STG2.1|for i,j in range()|range expected 1 arguments|parsing"
+vATOM,1,Fail,1/1/2017,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading","UAT2.1| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading"
+vATOM,3,Pass,1/3/2017,PROD2.0|plt.show()|matplotlib is not imported|visualising,2.1
+vATOM,5,Fail,1/5/2017,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data","DEV2.1|print(data.[""Name""])|No column named ""Name""|retrive data"
+vATOM,7,Fail,1/7/2017,DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data,DEV2.1|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data
+vATOM,12,Pass,1/12/2017,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,2.1
+vATOM,15,Fail,1/15/2017,DEV2.0|plt.show()|plt:undefined name|displaying,DEV2.1|plt.show()|plt:undefined name|displaying
+vATOM,17,Pass,1/17/2017,STG2.0|for x in range(10)|List out of index [15]|looping,2.1
+vATOM,19,Pass,1/19/2017,"STG2.0|for i,j in range()|range expected 1 arguments|parsing",2.1
+vATOM,20,Fail,1/20/2017,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing","PROD2.1|import plotly|The plotly.plotly module is deprecated,|importing"
+vATOM,29,Pass,1/29/2017,"UAT2.0|return func(*args, **kw)|InterruptedError|Handle Interrupt Error",2.1
+vATOM,30,Fail,1/30/2017,UAT2.0|import pandasa as pd|pandas: Package not found|importing,UAT2.1|import pandasa as pd|pandas: Package not found|importing
+vATOM,34,Fail,2/3/2017,UAT2.0|import matplotlib as plt|matplotlib: Package not found|importing,UAT2.1|import matplotlib as plt|matplotlib: Package not found|importing
+vATOM,35,Fail,2/4/2017,"PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data","PROD2.1|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data"
+vATOM,36,Pass,2/5/2017,UAT2.0|fun(20)|arguments undefined in function|pass by value ,2.1
+vATOM,37,Pass,2/6/2017,"STG2.0|for i,j in range()|range expected 1 arguments|parsing",2.1
+vATOM,38,Pass,2/7/2017,UAT2.0|import pandas as pd|package not found|importing,2.1
+vATOM,40,Fail,2/9/2017,"DEV2.0|plt.plot(x,y)|x,y : undefined variables|plotting","DEV2.1|plt.plot(x,y)|x,y : undefined variables|plotting"
+vATOM,44,Fail,2/13/2017,UAT2.0|import pandas as pd|package not found|importing,UAT2.1|import pandas as pd|package not found|importing
+vATOM,47,Fail,2/16/2017,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading","UAT2.1| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading"
+vATOM,48,Fail,2/17/2017,PROD2.0|print(('python')*a)|a: variable undefined|retrieve data,PROD2.1|print(('python')*a)|a: variable undefined|retrieve data
+vATOM,58,Pass,2/27/2017,"DEV2.0| print ""Ok""|Missing parentheses in call to 'print'| printing",2.1
+vATOM,62,Fail,3/3/2017,PROD2.0|import numpy as np|numpy: Package not found|importing,PROD2.1|import numpy as np|numpy: Package not found|importing
+vATOM,64,Pass,3/5/2017,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,2.1
+vATOM,65,Fail,3/6/2017,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,STG2.1|import matplotlib.pyplot as plt|matplotlib: Package not found|importing
+vATOM,66,Pass,3/7/2017,DEV2.0|import seaborn as sns|seaborn: package not found|importing,2.1
+vATOM,67,Pass,3/8/2017,DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data,2.1
+vATOM,68,Fail,3/9/2017,"PROD2.0| client.post_telemetry(navsat_msg, compass_msg)|TimeoutError|Accept TimeoutError Properly","PROD2.1| client.post_telemetry(navsat_msg, compass_msg)|TimeoutError|Accept TimeoutError Properly"
+vATOM,69,Pass,3/10/2017,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,2.1
+vATOM,71,Fail,3/12/2017,"DEV2.0|for val in ""string"": |val : undefined variable|iteration","DEV2.1|for val in ""string"": |val : undefined variable|iteration"
+vATOM,74,Fail,3/15/2017,"STG2.0|for i in range(0,2)|List out of Index [23]|looping","STG2.1|for i in range(0,2)|List out of Index [23]|looping"
+vATOM,75,Pass,3/16/2017,DEV2.0|plt.show()|plt:undefined name|displaying,2.1
+vATOM,78,Pass,3/19/2017,UAT2.0|form.submit(name[0])|Array index out of bounds|Need to specify name,2.1
+vATOM,79,Fail,3/20/2017,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing","PROD2.1|import plotly|The plotly.plotly module is deprecated,|importing"
+vATOM,80,Pass,3/21/2017,PROD2.0|np.arange(8)|numpy array out of range|looping,2.1
+vATOM,81,Pass,3/22/2017,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data",2.1
+vATOM,82,Fail,3/23/2017,UAT2.0|import pandasa as pd|pandasa: Package not found|importing,UAT2.1|import pandasa as pd|pandasa: Package not found|importing
+vATOM,83,Fail,3/24/2017,DEV2.0|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming,DEV2.1|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming
+vATOM,85,Fail,3/26/2017,PROD2.0|print(('python')*a)|a: variable undefined|retrieve data,PROD2.1|print(('python')*a)|a: variable undefined|retrieve data
+vATOM,86,Pass,3/27/2017,"STG2.0|for i,j in range()|range expected 1 arguments|parsing",2.1
+vATOM,88,Pass,3/29/2017,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing",2.1
+vATOM,90,Pass,3/31/2017,PROD2.0|np.arange(8)|numpy array out of range|looping,2.1
+vATOM,91,Fail,4/1/2017,UAT2.0|fun(20)|arguments undefined in function|pass by value ,UAT2.1|fun(20)|arguments undefined in function|pass by value 
+vATOM,93,Pass,4/3/2017,"STG2.0|print(data[""Weight""].std())|column doesnot exist|standard variations",2.1
+vATOM,96,Fail,4/6/2017,PROD2.0|plt.show()|matplotlib is not imported|visualising,PROD2.1|plt.show()|matplotlib is not imported|visualising
+vATOM,98,Fail,4/8/2017,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,DEV2.1|print(df.columns)|df: undefined dataframe|retrive data
+vATOM,100,Fail,4/10/2017,DEV2.0|plt.show()|plt:undefined name|displaying,DEV2.1|plt.show()|plt:undefined name|displaying
+vATOM,101,Pass,4/11/2017,UAT2.0|import pandasa as pd|pandasa: Package not found|importing,2.1
+vATOM,103,Fail,4/13/2017,"DEV2.0|print(""sum is"",a+b)|No varibles named a and b|retrive data","DEV2.1|print(""sum is"",a+b)|No varibles named a and b|retrive data"
+vATOM,105,Fail,4/15/2017,PROD2.0|import seaborn as sns|seaborn: Package not found|Coloring,PROD2.1|import seaborn as sns|seaborn: Package not found|Coloring
+vATOM,106,Fail,4/16/2017,PROD2.0|Not compatible with IOS 13|Update not found|Updating,PROD2.1|Not compatible with IOS 13|Update not found|Updating
+vATOM,110,Pass,4/20/2017,UAT2.0|import matplotlib as plt|matplotlib: Package not found|importing,2.1
+vATOM,112,Pass,4/22/2017,PROD2.0|import seaborn as sns|seaborn: Package not found|Coloring,2.1
+vATOM,113,Fail,4/23/2017,PROD2.0|Not compatible with IOS 13|Update not found|Updating,PROD2.1|Not compatible with IOS 13|Update not found|Updating
+vATOM,119,Pass,4/29/2017,"STG2.0|for i in range(0,2)|List out of Index [23]|looping",2.1
+vATOM,122,Pass,5/2/2017,PROD2.0|np.arange(8)|numpy array out of range|looping,2.1
+vATOM,123,Pass,5/3/2017,DEV2.0|plt.show()|plt:undefined name|displaying,2.1
+vATOM,132,Pass,5/12/2017,"PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data",2.1
+vATOM,133,Pass,5/13/2017,UAT2.0|import pandas as pd|package not found|importing,2.1
+vATOM,139,Pass,5/19/2017,"UAT2.0|return func(*args, **kw)|InterruptedError|Handle Interrupt Error",2.1
+vATOM,141,Pass,5/21/2017,"PROD2.0| plt.rc(""font"",""size""=14)| keyword can't be an expression| setting RC parameter",2.1
+vATOM,142,Pass,5/22/2017,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,2.1
+vATOM,143,Pass,5/23/2017,DEV2.0|plt.show()|displaying graph without plotting it|plotting,2.1
+vATOM,144,Pass,5/24/2017,PROD2.0|print(('python')*a)|a: variable undefined|retrieve data,2.1
+vATOM,146,Pass,5/26/2017,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,2.1
+vATOM,147,Pass,5/27/2017,"DEV2.0| print ""Ok""|Missing parentheses in call to 'print'| printing",2.1
+vATOM,148,Fail,5/28/2017,PROD2.0|Not compatible with IOS 13|Update not found|Updating,PROD2.1|Not compatible with IOS 13|Update not found|Updating
+vATOM,150,Fail,5/30/2017,UAT2.0|import matplotlib.pyplot as plt|matplot: Package not found|importing,UAT2.1|import matplotlib.pyplot as plt|matplot: Package not found|importing
+vATOM,151,Fail,5/31/2017,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,DEV2.1|print(df.columns)|df: undefined dataframe|retrive data
+vATOM,152,Fail,6/1/2017,PROD2.0|Not compatible with IOS 13|Update not found|Updating,PROD2.1|Not compatible with IOS 13|Update not found|Updating
+vATOM,153,Fail,6/2/2017,"DEV2.0|print(""sum is"",a+b)|No varibles named a and b|retrive data","DEV2.1|print(""sum is"",a+b)|No varibles named a and b|retrive data"
+vATOM,154,Pass,6/3/2017,"DEV2.0|for val in ""string"": |val : undefined variable|iteration",2.1
+vATOM,157,Pass,6/6/2017,"DEV2.0|plt.plot(x,y)|x,y : undefined variables|plotting",2.1
+vATOM,159,Pass,6/8/2017,"DEV2.0| print ""Ok""|Missing parentheses in call to 'print'| printing",2.1
+vATOM,160,Fail,6/9/2017,PROD2.0|print(('python')*a)|a: variable undefined|retrieve data,PROD2.1|print(('python')*a)|a: variable undefined|retrieve data
+vATOM,166,Fail,6/15/2017,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading","UAT2.1| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading"
+vATOM,167,Pass,6/16/2017,DEV2.0|df.read_csv(...)|file not found|Importing file,2.1
+vATOM,170,Fail,6/19/2017,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,UAT2.1|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise
+vATOM,175,Fail,6/24/2017,PROD2.0|print(('python')*a)|a: variable undefined|retrieve data,PROD2.1|print(('python')*a)|a: variable undefined|retrieve data
+vATOM,176,Fail,6/25/2017,PROD2.0|import numpy as np|numpy: Package not found|importing,PROD2.1|import numpy as np|numpy: Package not found|importing
+vATOM,180,Pass,6/29/2017,DEV2.0|import seaborn as sns|seaborn: package not found|importing,2.1
+vATOM,182,Pass,7/1/2017,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,2.1
+vATOM,183,Fail,7/2/2017,"STG2.0|for i in range(0,2)|List out of Index [23]|looping","STG2.1|for i in range(0,2)|List out of Index [23]|looping"
+vATOM,185,Fail,7/4/2017,STG2.0|while var >! 0:  |invalid operator|validation,STG2.1|while var >! 0:  |invalid operator|validation
+vATOM,186,Fail,7/5/2017,DEV2.0|plt.show()|plt:undefined name|displaying,DEV2.1|plt.show()|plt:undefined name|displaying
+vATOM,189,Fail,7/8/2017,"DEV2.0|print(""a[10]"")|No varible named a|retrive data","DEV2.1|print(""a[10]"")|No varible named a|retrive data"
+vATOM,191,Pass,7/10/2017,STG2.0|for x in range(10)|List out of index [15]|looping,2.1
+vATOM,192,Pass,7/11/2017,UAT2.0|import matplotlib as plt|matplotlib: Package not found|importing,2.1
+vATOM,194,Fail,7/13/2017,PROD2.0|import seaborn as sns|seaborn: Package not found|Coloring,PROD2.1|import seaborn as sns|seaborn: Package not found|Coloring
+vATOM,195,Pass,7/14/2017,"PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data",2.1
+vATOM,201,Fail,7/20/2017,PROD2.0|print(('python')*a)|a: variable undefined|retrieve data,PROD2.1|print(('python')*a)|a: variable undefined|retrieve data
+vATOM,203,Fail,7/22/2017,STG2.0|for i in Age|list index out of range|looping,STG2.1|for i in Age|list index out of range|looping
+vATOM,204,Pass,7/23/2017,DEV2.0|import seaborn as sns|seaborn: package not found|importing,2.1
+vATOM,207,Fail,7/26/2017,DEV2.0|df.read_csv(...)|file not found|Importing file,DEV2.1|df.read_csv(...)|file not found|Importing file
+vATOM,209,Fail,7/28/2017,PROD2.0|Not compatible with IOS 13|Update not found|Updating,PROD2.1|Not compatible with IOS 13|Update not found|Updating
+vATOM,210,Fail,7/29/2017,UAT2.0|import pandasa as pd|pandasa: Package not found|importing,UAT2.1|import pandasa as pd|pandasa: Package not found|importing
+vATOM,211,Pass,7/30/2017,UAT2.0|form.submit(name[0])|Array index out of bounds|Need to specify name,2.1
+vATOM,212,Pass,7/31/2017,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data",2.1
+vATOM,214,Fail,8/2/2017,"UAT2.0|return func(*args, **kw)|InterruptedError|Handle Interrupt Error","UAT2.1|return func(*args, **kw)|InterruptedError|Handle Interrupt Error"
+vATOM,215,Fail,8/3/2017,DEV2.0|import seaborn as sns|seaborn: package not found|importing,DEV2.1|import seaborn as sns|seaborn: package not found|importing
+vATOM,218,Fail,8/6/2017,STG2.0|while var >! 0:  |invalid operator|validation,STG2.1|while var >! 0:  |invalid operator|validation
+vATOM,219,Pass,8/7/2017,DEV2.0|plt.show()|plt:undefined name|displaying,2.1
+vATOM,223,Pass,8/11/2017,"DEV2.0| print ""Ok""|Missing parentheses in call to 'print'| printing",2.1
+vATOM,224,Pass,8/12/2017,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing",2.1
+vATOM,226,Pass,8/14/2017,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading",2.1
+vATOM,228,Fail,8/16/2017,"DEV2.0|plt.plot(x,y)|x,y : undefined variables|plotting","DEV2.1|plt.plot(x,y)|x,y : undefined variables|plotting"
+vATOM,229,Fail,8/17/2017,UAT2.0|import pandasa as pd|pandas: Package not found|importing,UAT2.1|import pandasa as pd|pandas: Package not found|importing
+vATOM,231,Fail,8/19/2017,"PROD2.0| client.post_telemetry(navsat_msg, compass_msg)|TimeoutError|Accept TimeoutError Properly","PROD2.1| client.post_telemetry(navsat_msg, compass_msg)|TimeoutError|Accept TimeoutError Properly"
+vATOM,233,Pass,8/21/2017,"DEV2.0|print(""sum is"",a+b)|No varibles named a and b|retrive data",2.1
+vATOM,236,Pass,8/24/2017,STG2.0|for x in range(10)|List out of index [15]|looping,2.1
+vATOM,237,Fail,8/25/2017,PROD2.0|plt.show()|matplotlib is not imported|visualising,PROD2.1|plt.show()|matplotlib is not imported|visualising
+vATOM,239,Fail,8/27/2017,UAT2.0|import matplotlib as plt|matplotlib: Package not found|importing,UAT2.1|import matplotlib as plt|matplotlib: Package not found|importing
+vATOM,240,Pass,8/28/2017,PROD2.0|import seaborn as sns|seaborn: Package not found|Coloring,2.1
+vATOM,242,Fail,8/30/2017,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading","UAT2.1| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading"
+vATOM,243,Pass,8/31/2017,"DEV2.0| print ""Ok""|Missing parentheses in call to 'print'| printing",2.1
+vATOM,244,Pass,9/1/2017,UAT2.0|form.submit(name[0])|Array index out of bounds|Need to specify name,2.1
+vATOM,245,Fail,9/2/2017,UAT2.0|import pandas as pd|package not found|importing,UAT2.1|import pandas as pd|package not found|importing
+vATOM,247,Pass,9/4/2017,UAT2.0|import pandas as pd|package not found|importing,2.1
+vATOM,248,Pass,9/5/2017,DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data,2.1
+vATOM,253,Fail,9/10/2017,PROD2.0|print(('python')*a)|a: variable undefined|retrieve data,PROD2.1|print(('python')*a)|a: variable undefined|retrieve data
+vATOM,257,Pass,9/14/2017,UAT2.0|form.submit(name[0])|Array index out of bounds|Need to specify name,2.1
+vATOM,258,Fail,9/15/2017,PROD2.0|import seaborn as sns|seaborn: Package not found|Coloring,PROD2.1|import seaborn as sns|seaborn: Package not found|Coloring
+vATOM,260,Pass,9/17/2017,"UAT2.0|return func(*args, **kw)|InterruptedError|Handle Interrupt Error",2.1
+vATOM,261,Pass,9/18/2017,STG2.0| if i>5 |SyntaxError: invalid syntax |decision control,2.1
+vATOM,262,Pass,9/19/2017,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,2.1
+vATOM,265,Pass,9/22/2017,DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data,2.1
+vATOM,266,Pass,9/23/2017,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,2.1
+vATOM,268,Pass,9/25/2017,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data",2.1
+vATOM,269,Pass,9/26/2017,DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data,2.1
+vATOM,272,Pass,9/29/2017,DEV2.0|df.read_csv(...)|file not found|Importing file,2.1
+vATOM,273,Fail,9/30/2017,STG2.0|for x in range(10)|List out of index [15]|looping,STG2.1|for x in range(10)|List out of index [15]|looping
+vATOM,275,Pass,10/2/2017,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,2.1
+vATOM,277,Fail,10/4/2017,STG2.0|for x in range(10)|List out of index [15]|looping,STG2.1|for x in range(10)|List out of index [15]|looping
+vATOM,279,Pass,10/6/2017,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,2.1
+vATOM,280,Fail,10/7/2017,PROD2.0|import seaborn as sns|seaborn: Package not found|Coloring,PROD2.1|import seaborn as sns|seaborn: Package not found|Coloring
+vATOM,281,Fail,10/8/2017,"DEV2.0| for x,d in data.Height, data.shape[0]| too many values to unpack|looping","DEV2.1| for x,d in data.Height, data.shape[0]| too many values to unpack|looping"
+vATOM,283,Fail,10/10/2017,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data","DEV2.1|print(data.[""Name""])|No column named ""Name""|retrive data"
+vATOM,284,Fail,10/11/2017,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,DEV2.1|print(df.columns)|df: undefined dataframe|retrive data
+vATOM,288,Fail,10/15/2017,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data","DEV2.1|print(data.[""Name""])|No column named ""Name""|retrive data"
+vATOM,289,Fail,10/16/2017,UAT2.0|import pandas as pd|package not found|importing,UAT2.1|import pandas as pd|package not found|importing
+vATOM,290,Pass,10/17/2017,DEV2.0|plt.show()|displaying graph without plotting it|plotting,2.1
+vATOM,293,Pass,10/20/2017,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,2.1
+vATOM,297,Pass,10/24/2017,UAT2.0|import pandasa as pd|pandas: Package not found|importing,2.1
+vATOM,303,Fail,10/30/2017,UAT2.0|import pandas as pd|package not found|importing,UAT2.1|import pandas as pd|package not found|importing
+vATOM,304,Fail,10/31/2017,DEV2.0|plt.show()|displaying graph without plotting it|plotting,DEV2.1|plt.show()|displaying graph without plotting it|plotting
+vATOM,305,Fail,11/1/2017,DEV2.0|plt.show()|plt:undefined name|displaying,DEV2.1|plt.show()|plt:undefined name|displaying
+vATOM,306,Pass,11/2/2017,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,2.1
+vATOM,307,Fail,11/3/2017,"DEV2.0|print(""a[10]"")|No varible named a|retrive data","DEV2.1|print(""a[10]"")|No varible named a|retrive data"
+vATOM,321,Pass,11/17/2017,DEV2.0|import seaborn as sns|seaborn: package not found|importing,2.1
+vATOM,322,Pass,11/18/2017,"DEV2.0| print ""Ok""|Missing parentheses in call to 'print'| printing",2.1
+vATOM,323,Fail,11/19/2017,STG2.0|for x in range(10)|List out of index [15]|looping,STG2.1|for x in range(10)|List out of index [15]|looping
+vATOM,324,Pass,11/20/2017,"DEV2.0|print(""sum is"",a+b)|No varibles named a and b|retrive data",2.1
+vATOM,327,Pass,11/23/2017,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,2.1
+vATOM,330,Fail,11/26/2017,"DEV2.0|for val in ""string"": |val : undefined variable|iteration","DEV2.1|for val in ""string"": |val : undefined variable|iteration"
+vATOM,331,Fail,11/27/2017,PROD2.0|np.arange(8)|numpy array out of range|looping,PROD2.1|np.arange(8)|numpy array out of range|looping
+vATOM,334,Pass,11/30/2017,"PROD2.0| client.post_telemetry(navsat_msg, compass_msg)|TimeoutError|Accept TimeoutError Properly",2.1
+vATOM,339,Pass,12/5/2017,STG2.0| if i>5 |SyntaxError: invalid syntax |decision control,2.1
+vATOM,345,Fail,12/11/2017,"STG2.0|print(data[""Weight""].std())|column doesnot exist|standard variations","STG2.1|print(data[""Weight""].std())|column doesnot exist|standard variations"
+vATOM,347,Pass,12/13/2017,"DEV2.0|plt.plot(x,y)|x,y : undefined variables|plotting",2.1
+vATOM,348,Fail,12/14/2017,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading","UAT2.1| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading"
+vATOM,349,Pass,12/15/2017,"STG2.0|for i in range(0,2)|List out of Index [23]|looping",2.1
+vATOM,350,Pass,12/16/2017,"UAT2.0|return func(*args, **kw)|InterruptedError|Handle Interrupt Error",2.1
+vATOM,352,Pass,12/18/2017,"STG2.0|for i in range(0,2)|List out of Index [23]|looping",2.1
+vATOM,353,Pass,12/19/2017,DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data,2.1
+vATOM,355,Pass,12/21/2017,PROD2.0|plt.show()|matplotlib is not imported|visualising,2.1
+vATOM,357,Fail,12/23/2017,"DEV2.0|print(""a[10]"")|No varible named a|retrive data","DEV2.1|print(""a[10]"")|No varible named a|retrive data"
+vATOM,358,Pass,12/24/2017,DEV2.0|df.read_csv(...)|file not found|Importing file,2.1
+vATOM,359,Fail,12/25/2017,"DEV2.0|for val in ""string"": |val : undefined variable|iteration","DEV2.1|for val in ""string"": |val : undefined variable|iteration"
+vATOM,364,Pass,12/30/2017,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,2.1
+vATOM,1,Fail,1/1/2018,"DEV2.0|plt.plot(x,y)|x,y : undefined variables|plotting","DEV2.1|plt.plot(x,y)|x,y : undefined variables|plotting"
+vATOM,2,Pass,1/2/2018,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing",2.1
+vATOM,6,Fail,1/6/2018,"STG2.0|for i,j in range()|range expected 1 arguments|parsing","STG2.1|for i,j in range()|range expected 1 arguments|parsing"
+vATOM,7,Fail,1/7/2018,UAT2.0|import matplotlib.pyplot as plt|matplot: Package not found|importing,UAT2.1|import matplotlib.pyplot as plt|matplot: Package not found|importing
+vATOM,11,Pass,1/11/2018,STG2.0|for i in Age|list index out of range|looping,2.1
+vATOM,12,Pass,1/12/2018,"STG2.0|for i in range(0,2)|List out of Index [23]|looping",2.1
+vATOM,17,Pass,1/17/2018,"PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data",2.1
+vATOM,24,Pass,1/24/2018,PROD2.0|np.arange(8)|numpy array out of range|looping,2.1
+vATOM,25,Pass,1/25/2018,UAT2.0|import matplotlib.pyplot as plt|matplot: Package not found|importing,2.1
+vATOM,26,Pass,1/26/2018,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,2.1
+vATOM,31,Fail,1/31/2018,"UAT2.0|return func(*args, **kw)|InterruptedError|Handle Interrupt Error","UAT2.1|return func(*args, **kw)|InterruptedError|Handle Interrupt Error"
+vATOM,34,Fail,2/3/2018,"DEV2.0|for val in ""string"": |val : undefined variable|iteration","DEV2.1|for val in ""string"": |val : undefined variable|iteration"
+vATOM,37,Fail,2/6/2018,"STG2.0|for i,j in range()|range expected 1 arguments|parsing","STG2.1|for i,j in range()|range expected 1 arguments|parsing"
+vATOM,42,Pass,2/11/2018,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,2.1
+vATOM,46,Pass,2/15/2018,DEV2.0|plt.show()|plt:undefined name|displaying,2.1
+vATOM,50,Pass,2/19/2018,DEV2.0|plt.show()|plt:undefined name|displaying,2.1
+vATOM,53,Fail,2/22/2018,"STG2.0|print(data[""Weight""].std())|column doesnot exist|standard variations","STG2.1|print(data[""Weight""].std())|column doesnot exist|standard variations"
+vATOM,56,Fail,2/25/2018,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing","PROD2.1|import plotly|The plotly.plotly module is deprecated,|importing"
+vATOM,57,Fail,2/26/2018,STG2.0|for i in Age|list index out of range|looping,STG2.1|for i in Age|list index out of range|looping
+vATOM,58,Pass,2/27/2018,DEV2.0|plt.show()|displaying graph without plotting it|plotting,2.1
+vATOM,60,Fail,3/1/2018,"STG2.0|print(data[""Weight""].std())|column doesnot exist|standard variations","STG2.1|print(data[""Weight""].std())|column doesnot exist|standard variations"
+vATOM,66,Pass,3/7/2018,"DEV2.0| for x,d in data.Height, data.shape[0]| too many values to unpack|looping",2.1
+vATOM,71,Fail,3/12/2018,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,UAT2.1|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise
+vATOM,72,Fail,3/13/2018,PROD2.0|import seaborn as sns|seaborn: Package not found|Coloring,PROD2.1|import seaborn as sns|seaborn: Package not found|Coloring
+vATOM,76,Pass,3/17/2018,STG2.0|for x in range(10)|List out of index [15]|looping,2.1
+vATOM,78,Pass,3/19/2018,"DEV2.0|print(""sum is"",a+b)|No varibles named a and b|retrive data",2.1
+vATOM,79,Pass,3/20/2018,"STG2.0|for i,j in range()|range expected 1 arguments|parsing",2.1
+vATOM,81,Fail,3/22/2018,"DEV2.0| print ""Ok""|Missing parentheses in call to 'print'| printing","DEV2.1| print ""Ok""|Missing parentheses in call to 'print'| printing"
+vATOM,82,Fail,3/23/2018,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading","UAT2.1| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading"
+vATOM,86,Fail,3/27/2018,UAT2.0|fun(20)|arguments undefined in function|pass by value ,UAT2.1|fun(20)|arguments undefined in function|pass by value 
+vATOM,87,Fail,3/28/2018,"STG2.0|for i,j in range()|range expected 1 arguments|parsing","STG2.1|for i,j in range()|range expected 1 arguments|parsing"
+vATOM,90,Pass,3/31/2018,STG2.0| if i>5 |SyntaxError: invalid syntax |decision control,2.1
+vATOM,93,Fail,4/3/2018,DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data,DEV2.1|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data
+vATOM,95,Fail,4/5/2018,DEV2.0|plt.show()|displaying graph without plotting it|plotting,DEV2.1|plt.show()|displaying graph without plotting it|plotting
+vATOM,96,Pass,4/6/2018,"DEV2.0|for val in ""string"": |val : undefined variable|iteration",2.1
+vATOM,99,Pass,4/9/2018,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data",2.1
+vATOM,100,Pass,4/10/2018,"STG2.0|for i in range(0,2)|List out of Index [23]|looping",2.1
+vATOM,102,Pass,4/12/2018,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,2.1
+vATOM,105,Pass,4/15/2018,DEV2.0|df.read_csv(...)|file not found|Importing file,2.1
+vATOM,106,Fail,4/16/2018,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,STG2.1|import matplotlib.pyplot as plt|matplotlib: Package not found|importing
+vATOM,107,Fail,4/17/2018,"STG2.0|for i in range(0,2)|List out of Index [23]|looping","STG2.1|for i in range(0,2)|List out of Index [23]|looping"
+vATOM,108,Fail,4/18/2018,"PROD2.0| client.post_telemetry(navsat_msg, compass_msg)|TimeoutError|Accept TimeoutError Properly","PROD2.1| client.post_telemetry(navsat_msg, compass_msg)|TimeoutError|Accept TimeoutError Properly"
+vATOM,110,Pass,4/20/2018,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,2.1
+vATOM,111,Fail,4/21/2018,DEV2.0|plt.show()|plt:undefined name|displaying,DEV2.1|plt.show()|plt:undefined name|displaying
+vATOM,112,Fail,4/22/2018,"UAT2.0|return func(*args, **kw)|InterruptedError|Handle Interrupt Error","UAT2.1|return func(*args, **kw)|InterruptedError|Handle Interrupt Error"
+vATOM,114,Pass,4/24/2018,PROD2.0|np.arange(8)|numpy array out of range|looping,2.1
+vATOM,115,Pass,4/25/2018,UAT2.0|import matplotlib as plt|matplotlib: Package not found|importing,2.1
+vATOM,117,Fail,4/27/2018,STG2.0|for x in range(10)|List out of index [15]|looping,STG2.1|for x in range(10)|List out of index [15]|looping
+vATOM,118,Fail,4/28/2018,"DEV2.0| for x,d in data.Height, data.shape[0]| too many values to unpack|looping","DEV2.1| for x,d in data.Height, data.shape[0]| too many values to unpack|looping"
+vATOM,121,Fail,5/1/2018,"UAT2.0|return func(*args, **kw)|InterruptedError|Handle Interrupt Error","UAT2.1|return func(*args, **kw)|InterruptedError|Handle Interrupt Error"
+vATOM,123,Fail,5/3/2018,PROD2.0|print(('python')*a)|a: variable undefined|retrieve data,PROD2.1|print(('python')*a)|a: variable undefined|retrieve data
+vATOM,125,Fail,5/5/2018,"DEV2.0| for x,d in data.Height, data.shape[0]| too many values to unpack|looping","DEV2.1| for x,d in data.Height, data.shape[0]| too many values to unpack|looping"
+vATOM,126,Pass,5/6/2018,STG2.0|for i in Age|list index out of range|looping,2.1
+vATOM,130,Pass,5/10/2018,"PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data",2.1
+vATOM,132,Pass,5/12/2018,DEV2.0|plt.show()|displaying graph without plotting it|plotting,2.1
+vATOM,137,Pass,5/17/2018,"DEV2.0|print(""a[10]"")|No varible named a|retrive data",2.1
+vATOM,138,Fail,5/18/2018,"DEV2.0| print ""Ok""|Missing parentheses in call to 'print'| printing","DEV2.1| print ""Ok""|Missing parentheses in call to 'print'| printing"
+vATOM,139,Pass,5/19/2018,PROD2.0|np.arange(8)|numpy array out of range|looping,2.1
+vATOM,140,Pass,5/20/2018,PROD2.0|Not compatible with IOS 13|Update not found|Updating,2.1
+vATOM,142,Fail,5/22/2018,"DEV2.0| print ""Ok""|Missing parentheses in call to 'print'| printing","DEV2.1| print ""Ok""|Missing parentheses in call to 'print'| printing"
+vATOM,145,Fail,5/25/2018,"STG2.0|for i in range(0,2)|List out of Index [23]|looping","STG2.1|for i in range(0,2)|List out of Index [23]|looping"
+vATOM,146,Fail,5/26/2018,PROD2.0|Not compatible with IOS 13|Update not found|Updating,PROD2.1|Not compatible with IOS 13|Update not found|Updating
+vATOM,147,Pass,5/27/2018,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing",2.1
+vATOM,149,Pass,5/29/2018,UAT2.0|fun(20)|arguments undefined in function|pass by value ,2.1
+vATOM,150,Pass,5/30/2018,DEV2.0|plt.show()|displaying graph without plotting it|plotting,2.1
+vATOM,154,Fail,6/3/2018,UAT2.0|import pandasa as pd|pandas: Package not found|importing,UAT2.1|import pandasa as pd|pandas: Package not found|importing
+vATOM,156,Pass,6/5/2018,PROD2.0|import numpy as np|numpy: Package not found|importing,2.1
+vATOM,159,Pass,6/8/2018,STG2.0|for i in Age|list index out of range|looping,2.1
+vATOM,163,Fail,6/12/2018,"DEV2.0|plt.plot(x,y)|x,y : undefined variables|plotting","DEV2.1|plt.plot(x,y)|x,y : undefined variables|plotting"
+vATOM,166,Pass,6/15/2018,"DEV2.0|print(""a[10]"")|No varible named a|retrive data",2.1
+vATOM,173,Fail,6/22/2018,DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data,DEV2.1|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data
+vATOM,179,Fail,6/28/2018,"DEV2.0| for x,d in data.Height, data.shape[0]| too many values to unpack|looping","DEV2.1| for x,d in data.Height, data.shape[0]| too many values to unpack|looping"
+vATOM,184,Pass,7/3/2018,"STG2.0|print(data[""Weight""].std())|column doesnot exist|standard variations",2.1
+vATOM,185,Pass,7/4/2018,DEV2.0|import seaborn as sns|seaborn: package not found|importing,2.1
+vATOM,189,Pass,7/8/2018,STG2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|importing,2.1
+vATOM,191,Fail,7/10/2018,STG2.0|for i in Age|list index out of range|looping,STG2.1|for i in Age|list index out of range|looping
+vATOM,192,Fail,7/11/2018,UAT2.0|import matplotlib.pyplot as plt|matplot: Package not found|importing,UAT2.1|import matplotlib.pyplot as plt|matplot: Package not found|importing
+vATOM,195,Pass,7/14/2018,"PROD2.0|data.replace(data.Name, 'NA')|Not replacing all values in Name column|manipulating data",2.1
+vATOM,196,Fail,7/15/2018,"PROD2.0| plt.rc(""font"",""size""=14)| keyword can't be an expression| setting RC parameter","PROD2.1| plt.rc(""font"",""size""=14)| keyword can't be an expression| setting RC parameter"
+vATOM,198,Pass,7/17/2018,"STG2.0|print(data[""Weight""].std())|column doesnot exist|standard variations",2.1
+vATOM,202,Pass,7/21/2018,PROD2.0|import numpy as np|numpy: Package not found|importing,2.1
+vATOM,203,Fail,7/22/2018,"DEV2.0|for val in ""string"": |val : undefined variable|iteration","DEV2.1|for val in ""string"": |val : undefined variable|iteration"
+vATOM,206,Fail,7/25/2018,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,DEV2.1|print(df.columns)|df: undefined dataframe|retrive data
+vATOM,208,Pass,7/27/2018,PROD2.0|import seaborn as sns|seaborn: Package not found|Coloring,2.1
+vATOM,209,Fail,7/28/2018,"STG2.0|print(data[""Weight""].std())|column doesnot exist|standard variations","STG2.1|print(data[""Weight""].std())|column doesnot exist|standard variations"
+vATOM,210,Fail,7/29/2018,STG2.0| if i>5 |SyntaxError: invalid syntax |decision control,STG2.1| if i>5 |SyntaxError: invalid syntax |decision control
+vATOM,211,Fail,7/30/2018,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing","PROD2.1|import plotly|The plotly.plotly module is deprecated,|importing"
+vATOM,213,Pass,8/1/2018,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data",2.1
+vATOM,214,Fail,8/2/2018,PROD2.0|np.arange(8)|numpy array out of range|looping,PROD2.1|np.arange(8)|numpy array out of range|looping
+vATOM,216,Pass,8/4/2018,PROD2.0|Not compatible with IOS 13|Update not found|Updating,2.1
+vATOM,220,Pass,8/8/2018,UAT2.0|import pandasa as pd|pandas: Package not found|importing,2.1
+vATOM,224,Fail,8/12/2018,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data","DEV2.1|print(data.[""Name""])|No column named ""Name""|retrive data"
+vATOM,228,Fail,8/16/2018,PROD2.0|np.arange(8)|numpy array out of range|looping,PROD2.1|np.arange(8)|numpy array out of range|looping
+vATOM,230,Fail,8/18/2018,DEV2.0|import seaborn as sns|seaborn: package not found|importing,DEV2.1|import seaborn as sns|seaborn: package not found|importing
+vATOM,232,Pass,8/20/2018,"STG2.0|for i in range(0,2)|List out of Index [23]|looping",2.1
+vATOM,233,Fail,8/21/2018,DEV2.0|import seaborn as sns|seaborn: package not found|importing,DEV2.1|import seaborn as sns|seaborn: package not found|importing
+vATOM,234,Fail,8/22/2018,DEV2.0|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming,DEV2.1|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming
+vATOM,237,Pass,8/25/2018,"DEV2.0| for x,d in data.Height, data.shape[0]| too many values to unpack|looping",2.1
+vATOM,238,Pass,8/26/2018,UAT2.0|import matplotlib.pyplot as plt|matplot: Package not found|importing,2.1
+vATOM,239,Pass,8/27/2018,"PROD2.0| plt.rc(""font"",""size""=14)| keyword can't be an expression| setting RC parameter",2.1
+vATOM,240,Pass,8/28/2018,"PROD2.0| plt.rc(""font"",""size""=14)| keyword can't be an expression| setting RC parameter",2.1
+vATOM,249,Fail,9/6/2018,STG2.0|for x in range(10)|List out of index [15]|looping,STG2.1|for x in range(10)|List out of index [15]|looping
+vATOM,253,Pass,9/10/2018,UAT2.0|import matplotlib.pyplot as plt|matplotlib: Package not found|visualise,2.1
+vATOM,262,Fail,9/19/2018,"PROD2.0| plt.rc(""font"",""size""=14)| keyword can't be an expression| setting RC parameter","PROD2.1| plt.rc(""font"",""size""=14)| keyword can't be an expression| setting RC parameter"
+vATOM,263,Pass,9/20/2018,STG2.0|while var >! 0:  |invalid operator|validation,2.1
+vATOM,265,Fail,9/22/2018,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing","PROD2.1|import plotly|The plotly.plotly module is deprecated,|importing"
+vATOM,269,Pass,9/26/2018,STG2.0|while var >! 0:  |invalid operator|validation,2.1
+vATOM,270,Fail,9/27/2018,DEV2.0|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming,DEV2.1|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming
+vATOM,274,Fail,10/1/2018,DEV2.0|plt.show()|displaying graph without plotting it|plotting,DEV2.1|plt.show()|displaying graph without plotting it|plotting
+vATOM,275,Pass,10/2/2018,PROD2.0|import numpy as np|numpy: Package not found|importing,2.1
+vATOM,276,Fail,10/3/2018,PROD2.0|np.arange(8)|numpy array out of range|looping,PROD2.1|np.arange(8)|numpy array out of range|looping
+vATOM,280,Pass,10/7/2018,PROD2.0|plt.show()|matplotlib is not imported|visualising,2.1
+vATOM,282,Pass,10/9/2018,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data",2.1
+vATOM,283,Fail,10/10/2018,"DEV2.0|print(data.[""Name""])|No column named ""Name""|retrive data","DEV2.1|print(data.[""Name""])|No column named ""Name""|retrive data"
+vATOM,284,Pass,10/11/2018,"DEV2.0| for x,d in data.Height, data.shape[0]| too many values to unpack|looping",2.1
+vATOM,285,Fail,10/12/2018,UAT2.0|form.submit(name[0])|Array index out of bounds|Need to specify name,UAT2.1|form.submit(name[0])|Array index out of bounds|Need to specify name
+vATOM,286,Fail,10/13/2018,UAT2.0|import matplotlib as plt|matplotlib: Package not found|importing,UAT2.1|import matplotlib as plt|matplotlib: Package not found|importing
+vATOM,288,Pass,10/15/2018,"DEV2.0|for val in ""string"": |val : undefined variable|iteration",2.1
+vATOM,290,Pass,10/17/2018,"STG2.0|for i in range(0,2)|List out of Index [23]|looping",2.1
+vATOM,293,Pass,10/20/2018,"DEV2.0|print(""a[10]"")|No varible named a|retrive data",2.1
+vATOM,295,Fail,10/22/2018,PROD2.0|np.arange(8)|numpy array out of range|looping,PROD2.1|np.arange(8)|numpy array out of range|looping
+vATOM,300,Fail,10/27/2018,PROD2.0|print(('python')*a)|a: variable undefined|retrieve data,PROD2.1|print(('python')*a)|a: variable undefined|retrieve data
+vATOM,301,Fail,10/28/2018,PROD2.0|import numpy as np|numpy: Package not found|importing,PROD2.1|import numpy as np|numpy: Package not found|importing
+vATOM,302,Fail,10/29/2018,"DEV2.0|plt.plot(x,y)|x,y : undefined variables|plotting","DEV2.1|plt.plot(x,y)|x,y : undefined variables|plotting"
+vATOM,304,Fail,10/31/2018,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,DEV2.1|print(df.columns)|df: undefined dataframe|retrive data
+vATOM,308,Pass,11/4/2018,DEV2.0|data = pd.read_csv('usecase.csv')|file doesnot exist|retrive data,2.1
+vATOM,312,Pass,11/8/2018,UAT2.0|import pandas as pd|package not found|importing,2.1
+vATOM,313,Pass,11/9/2018,PROD2.0|import numpy as np|numpy: Package not found|importing,2.1
+vATOM,315,Fail,11/11/2018,"UAT2.0|return func(*args, **kw)|InterruptedError|Handle Interrupt Error","UAT2.1|return func(*args, **kw)|InterruptedError|Handle Interrupt Error"
+vATOM,318,Pass,11/14/2018,DEV2.0|import seaborn as sns|seaborn: package not found|importing,2.1
+vATOM,323,Pass,11/19/2018,DEV2.0|print(df.columns)|df: undefined dataframe|retrive data,2.1
+vATOM,325,Pass,11/21/2018,PROD2.0|plt.show()|matplotlib is not imported|visualising,2.1
+vATOM,331,Pass,11/27/2018,STG2.0|for x in range(10)|List out of index [15]|looping,2.1
+vATOM,332,Pass,11/28/2018,UAT2.0|import pandasa as pd|pandasa: Package not found|importing,2.1
+vATOM,333,Pass,11/29/2018,STG2.0|for x in range(10)|List out of index [15]|looping,2.1
+vATOM,334,Pass,11/30/2018,UAT2.0|fun(20)|arguments undefined in function|pass by value ,2.1
+vATOM,335,Pass,12/1/2018,PROD2.0|plt.show()|matplotlib is not imported|visualising,2.1
+vATOM,341,Pass,12/7/2018,DEV2.0|df = df[df['Android Ver'] != np.nan]|name 'df' is not defined|renaming,2.1
+vATOM,342,Fail,12/8/2018,"STG2.0|for i in range(0,2)|List out of Index [23]|looping","STG2.1|for i in range(0,2)|List out of Index [23]|looping"
+vATOM,343,Fail,12/9/2018,DEV2.0|import seaborn as sns|seaborn: package not found|importing,DEV2.1|import seaborn as sns|seaborn: package not found|importing
+vATOM,345,Fail,12/11/2018,"STG2.0|for i in range(0,2)|List out of Index [23]|looping","STG2.1|for i in range(0,2)|List out of Index [23]|looping"
+vATOM,346,Fail,12/12/2018,UAT2.0|import pandas as pd|package not found|importing,UAT2.1|import pandas as pd|package not found|importing
+vATOM,347,Fail,12/13/2018,"UAT2.0| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading","UAT2.1| a=pd.readcsv(""testcase.csv"")| module 'pandas' has no attribute 'readcsv'|reading"
+vATOM,350,Pass,12/16/2018,DEV2.0|import seaborn as sns|seaborn: package not found|importing,2.1
+vATOM,352,Pass,12/18/2018,"PROD2.0|import plotly|The plotly.plotly module is deprecated,|importing",2.1
+vATOM,353,Fail,12/19/2018,PROD2.0|np.arange(8)|numpy array out of range|looping,PROD2.1|np.arange(8)|numpy array out of range|looping
+vATOM,354,Fail,12/20/2018,UAT2.0|import pandasa as pd|pandasa: Package not found|importing,UAT2.1|import pandasa as pd|pandasa: Package not found|importing
+vATOM,356,Fail,12/22/2018,DEV2.0|plt.show()|plt:undefined name|displaying,DEV2.1|plt.show()|plt:undefined name|displaying
+vATOM,357,Fail,12/23/2018,DEV2.0|plt.show()|plt:undefined name|displaying,DEV2.1|plt.show()|plt:undefined name|displaying
+vATOM,359,Fail,12/25/2018,UAT2.0|fun(20)|arguments undefined in function|pass by value ,UAT2.1|fun(20)|arguments undefined in function|pass by value 
+vATOM,361,Fail,12/27/2018,DEV2.0|df.read_csv(...)|file not found|Importing file,DEV2.1|df.read_csv(...)|file not found|Importing file
